@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+<meta charset="ISO-8859-1">
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+   <script src="prog.js"></script> 
+<title>Papel Tijera Piedra ztonaz</title>
+</head>
+<body>
+
+	<table id = "thePlace" >
+	
+		
+	
+		<tr>
+			<td class="eachone" id="p1Piedra" onclick="p1Piedraa(this.id)"><img class="selected" src="https://cdn.pixabay.com/photo/2013/07/13/11/35/diamond-158431_960_720.png"></td>
+			<td class="eachone" id="p1Papel" onclick="p1Piedraa(this.id)"><img class="selected" src="https://cdn.pixabay.com/photo/2018/03/21/10/19/book-3246186_960_720.png"></td>
+			<td class="eachone" id="p1Tijera" onclick="p1Piedraa(this.id)"><img class="selected" src="https://cdn.pixabay.com/photo/2016/03/31/23/11/scissors-1297454_960_720.png"></td>
+			<td class="eachone"><button style="opacity:0" class="startAga classAnimateStartAgain" id = "s1" onclick="startAgain(this.id)">Start again</button></td>
+		</tr>
+			
+		<tr>
+			<td class="eachone theChoice" id="p1ChoiceS">Player 1 made a choice </td>
+			<td class="eachone theChoice" id="p2ChoiceS">Player 2 made a choice </td>
+			<td class="eachone" id = "winner">Winner: </td>
+			
+					<td class="eachone"><span><span class = "playersName"  id ="name1">Player 1</span><button class="changeButton" id = "change1" onclick="changeName(this.id)">Change Name</button></span>
+					<span class="eachone"><input id = "i1" placeholder="Player 1 - New name" style="display:none"></span>
+					<span><button id = "ok1" style="display:none" onclick="ok(this.id)">OK</button></span>
+			<br>
+			<span id = "scoreP1" style="position:absolute">0</span><br><br<span style="text-shadow: 0px 0px 5px #fff;"><br><br>Score</span><br><br><br><span id = "scoreP2" style="position:absolute">0</span>
+			<br>
+					<span><span class = "playersName"  id ="name2">Player 2</span><button class="changeButton" id = "change2" onclick="changeName(this.id)">Change Name</button></span>
+					<span class="eachone"><input id = "i2" placeholder="Player 2 - New name" style="display:none"></span>
+					<span><button id = "ok2" style="display:none" onclick="ok(this.id)">OK</button></span>
+					
+			
+			</td>
+			
+		</tr>
+		
+		<tr>
+			<td class="eachone" id="p2Piedra" onclick="p2Piedraa(this.id)"><img class="selected" src="https://cdn.pixabay.com/photo/2013/07/13/11/35/diamond-158431_960_720.png"></td>
+			<td class="eachone" id="p2Papel" onclick="p2Piedraa(this.id)"><img class="selected" src="https://cdn.pixabay.com/photo/2018/03/21/10/19/book-3246186_960_720.png"></td>
+			<td class="eachone" id="p2Tijera" onclick="p2Piedraa(this.id)"><img class="selected" src="https://cdn.pixabay.com/photo/2016/03/31/23/11/scissors-1297454_960_720.png"></td>
+			<td class="eachone"><button style="opacity:0" class = "startAga classAnimateStartAgain" id="s2" onclick="startAgain(this.id)">Start again</button></td>
+		</tr>
+		
+		
+		
+	</table>
+</body>
+<!-- 
+    Created by ztonaz
+    Twitter: @jonpatu
+    2021 June, Madrid
+    Rock Paper scissors
+    Piedra Papel Tijera
+ -->
+</html>
